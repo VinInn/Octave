@@ -1,0 +1,1 @@
+c++ -Wall -Ofast -std=c++0x -msse4  -fvisibility-inlines-hidden -ftree-vectorizer-verbose=2 -flto -fPIC -Iinclude test/${1}.cpp -L./lib -lOctave -lPlugins -Wl,-rpath ./lib -o bin/$1

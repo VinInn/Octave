@@ -1,0 +1,1 @@
+c++ -Wall -Ofast -std=c++0x -msse4  -fvisibility-inlines-hidden -ftree-vectorizer-verbose=2 -flto -Iinclude plugins/*.cc  -shared -fPIC -o lib/libPlugins.so -fvisibility=hidden -L./lib -lOctave -Wl,-rpath ./lib
